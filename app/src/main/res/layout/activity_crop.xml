@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="th.co.banana.scan.activity.CropActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/bm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black">
+
+            <ImageButton
+                android:id="@+id/snap"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_round_button"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <th.co.banana.scan.custom.DrawLine
+        android:id="@+id/draw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/tl"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/selector_round_button" />
+
+    <ImageView
+        android:id="@+id/tr"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/selector_round_button" />
+
+    <ImageView
+        android:id="@+id/bl"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/selector_round_button" />
+
+    <ImageView
+        android:id="@+id/br"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/selector_round_button" />
+
+    <RelativeLayout
+        android:id="@+id/observe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/bitmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="12dp"
+            android:background="@android:color/holo_red_dark"
+            android:layout_centerInParent="true"/>
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="4dp"
+            android:background="@android:color/holo_red_dark"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
